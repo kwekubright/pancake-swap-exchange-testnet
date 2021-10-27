@@ -12,7 +12,7 @@ import {
   ArrowDownIcon,
   ErrorIcon,
   OpenNewIcon,
-} from '@nguyenphu27/uikit'
+} from '@minifootballmoon/uikit'
 
 const otherProjects = [
   {
@@ -61,7 +61,7 @@ const otherProjects = [
   },
 ]
 
-const FoldableContent = styled(CardBody)<{ isVisible: boolean }>`
+const FoldableContent = styled(CardBody) <{ isVisible: boolean }>`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
 `
 

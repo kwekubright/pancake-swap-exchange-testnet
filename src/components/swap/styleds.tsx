@@ -1,7 +1,7 @@
 import { transparentize } from 'polished'
 import React from 'react'
 import { AlertTriangle } from 'react-feather'
-import { Text } from '@nguyenphu27/uikit'
+import { Text } from '@minifootballmoon/uikit'
 import styled, { css } from 'styled-components'
 import { AutoColumn } from '../Column'
 
@@ -33,15 +33,15 @@ export const BottomGrouping = styled.div`
   margin-top: 1rem;
 `
 
-export const ErrorText = styled(Text)<{ severity?: 0 | 1 | 2 | 3 | 4 }>`
+export const ErrorText = styled(Text) <{ severity?: 0 | 1 | 2 | 3 | 4 }>`
   color: ${({ theme, severity }) =>
     severity === 3 || severity === 4
       ? theme.colors.failure
       : severity === 2
-      ? theme.colors.binance
-      : severity === 1
-      ? theme.colors.text
-      : theme.colors.success};
+        ? theme.colors.binance
+        : severity === 1
+          ? theme.colors.text
+          : theme.colors.success};
 `
 
 export const StyledBalanceMaxMini = styled.button`

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import { Currency, Pair } from '@nguyenphu27/sdk'
-import { Button, ChevronDownIcon, Text } from '@nguyenphu27/uikit'
+import { Button, ChevronDownIcon, Text } from '@minifootballmoon/uikit'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import useI18n from 'hooks/useI18n'
@@ -164,9 +164,9 @@ export default function CurrencyInputPanel({
                 <Text id="pair">
                   {(currency && currency.symbol && currency.symbol.length > 20
                     ? `${currency.symbol.slice(0, 4)}...${currency.symbol.slice(
-                        currency.symbol.length - 5,
-                        currency.symbol.length
-                      )}`
+                      currency.symbol.length - 5,
+                      currency.symbol.length
+                    )}`
                     : currency?.symbol) || TranslateString(1196, 'Select a currency')}
                 </Text>
               )}

@@ -1,10 +1,10 @@
-import { MenuEntry } from '@nguyenphu27/uikit'
+import { MenuEntry } from '@minifootballmoon/uikit'
 
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap-testnet.netlify.app/',
+    href: '/',
   },
   {
     label: 'Trade',
@@ -21,11 +21,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Exchange',
-        href: 'https://pancakeswap-testnet.netlify.app/#/swap',
+        href: '/#/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://pancakeswap-testnet.netlify.app/#/pool',
+        href: '/#/pool',
       },
       {
         label: 'V1 Liquidity (Old)',

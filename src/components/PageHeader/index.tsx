@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Heading, IconButton, Text, Flex, useModal, TuneIcon, HistoryIcon } from '@nguyenphu27/uikit'
+import { Heading, IconButton, Text, Flex, useModal, TuneIcon, HistoryIcon } from '@minifootballmoon/uikit'
 import useI18n from 'hooks/useI18n'
 import SettingsModal from './SettingsModal'
 import RecentTransactionsModal from './RecentTransactionsModal'
@@ -26,7 +26,7 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
   const [onPresentRecentTransactions] = useModal(<RecentTransactionsModal translateString={TranslateString} />)
 
   return (
-    <StyledPageHeader>
+    <StyledPageHeader >
       <Flex alignItems="center">
         <Details>
           <Heading mb="8px">{title}</Heading>

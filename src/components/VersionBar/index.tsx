@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Button, InfoIcon, Link } from '@nguyenphu27/uikit'
+import { Text, Button, InfoIcon, Link } from '@minifootballmoon/uikit'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -20,22 +20,7 @@ const Wrapper = styled.div`
 
 const VersionBar = () => {
   return (
-    <Wrapper>
-      <Text bold mr="16px">
-        Source:
-      </Text>
-      <Button
-        variant="subtle"
-        as={Link}
-        href="https://github.com/nguyenphu27/pancake-swap-exchange-testnet"
-        endIcon={<InfoIcon color="white" />}
-        scale="sm"
-        ml="16px"
-        target="_blank"
-      >
-        Github
-      </Button>
-    </Wrapper>
+    <div />
   )
 }
 

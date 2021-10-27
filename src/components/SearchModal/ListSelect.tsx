@@ -2,7 +2,7 @@ import React, { memo, useCallback, useMemo, useRef, useState } from 'react'
 import { ArrowLeft } from 'react-feather'
 import { usePopper } from 'react-popper'
 import { useDispatch, useSelector } from 'react-redux'
-import { Button, Text, ChevronDownIcon, CloseIcon } from '@nguyenphu27/uikit'
+import { Button, Text, ChevronDownIcon, CloseIcon } from '@minifootballmoon/uikit'
 import styled from 'styled-components'
 import useI18n from 'hooks/useI18n'
 import { useFetchListCallback } from '../../hooks/useFetchListCallback'
@@ -259,8 +259,8 @@ export function ListSelect({ onDismiss, onBack }: { onDismiss: () => void; onBac
           return l1.name.toLowerCase() < l2.name.toLowerCase()
             ? -1
             : l1.name.toLowerCase() === l2.name.toLowerCase()
-            ? 0
-            : 1
+              ? 0
+              : 1
         }
         if (l1) return -1
         if (l2) return 1

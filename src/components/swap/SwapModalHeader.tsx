@@ -1,7 +1,7 @@
 import React, { useContext, useMemo } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { Trade, TradeType } from '@nguyenphu27/sdk'
-import { Button, Text } from '@nguyenphu27/uikit'
+import { Button, Text } from '@minifootballmoon/uikit'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Field } from '../../state/swap/actions'
 import { isAddress, shortenAddress } from '../../utils'
@@ -74,8 +74,8 @@ export default function SwapModalHeader({
               priceImpactSeverity > 2
                 ? theme.colors.failure
                 : showAcceptChanges && trade.tradeType === TradeType.EXACT_INPUT
-                ? theme.colors.primary
-                : 'text'
+                  ? theme.colors.primary
+                  : 'text'
             }
           >
             {trade.outputAmount.toSignificant(6)}

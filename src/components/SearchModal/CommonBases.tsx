@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '@nguyenphu27/uikit'
+import { Text } from '@minifootballmoon/uikit'
 import { ChainId, Currency, currencyEquals, ETHER, Token } from '@nguyenphu27/sdk'
 import styled from 'styled-components'
 

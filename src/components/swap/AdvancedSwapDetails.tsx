@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trade, TradeType } from '@nguyenphu27/sdk'
-import { Card, CardBody, Text } from '@nguyenphu27/uikit'
+import { Card, CardBody, Text } from '@minifootballmoon/uikit'
 import useI18n from 'hooks/useI18n'
 import { Field } from '../../state/swap/actions'
 import { useUserSlippageTolerance } from '../../state/user/hooks'
@@ -37,9 +37,9 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             <Text fontSize="14px">
               {isExactIn
                 ? `${slippageAdjustedAmounts[Field.OUTPUT]?.toSignificant(4)} ${trade.outputAmount.currency.symbol}` ??
-                  '-'
+                '-'
                 : `${slippageAdjustedAmounts[Field.INPUT]?.toSignificant(4)} ${trade.inputAmount.currency.symbol}` ??
-                  '-'}
+                '-'}
             </Text>
           </RowFixed>
         </RowBetween>

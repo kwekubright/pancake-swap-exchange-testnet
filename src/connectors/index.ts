@@ -1,4 +1,4 @@
-import { ConnectorNames } from '@nguyenphu27/uikit'
+import { ConnectorNames } from '@minifootballmoon/uikit'
 import { Web3Provider } from '@ethersproject/providers'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
@@ -35,7 +35,7 @@ export const walletconnect = new WalletConnectConnector({
   rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
-  pollingInterval: 15000,
+  // pollingInterval: 15000,
 })
 
 // mainnet only
