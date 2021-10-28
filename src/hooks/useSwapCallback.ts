@@ -9,7 +9,7 @@ import isZero from '../utils/isZero'
 import { useActiveWeb3React } from './index'
 import useENS from './useENS'
 
- enum SwapCallbackState {
+enum SwapCallbackState {
   INVALID,
   LOADING,
   VALID,
@@ -192,11 +192,10 @@ export function useSwapCallback(
             const withRecipient =
               recipient === account
                 ? base
-                : `${base} to ${
-                    recipientAddressOrName && isAddress(recipientAddressOrName)
-                      ? shortenAddress(recipientAddressOrName)
-                      : recipientAddressOrName
-                  }`
+                : `${base} to ${recipientAddressOrName && isAddress(recipientAddressOrName)
+                  ? shortenAddress(recipientAddressOrName)
+                  : recipientAddressOrName
+                }`
 
             addTransaction(response, {
               summary: withRecipient,
